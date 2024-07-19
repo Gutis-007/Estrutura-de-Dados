@@ -37,7 +37,6 @@ public class Pessoa implements Comparable<Pessoa> {
 
     @Override
     public int compareTo(Pessoa outraPessoa) {
-        // Compara primeiro pelo nível de prioridade, depois pelo horário de chegada
         int prioridadeComparison = Integer.compare(outraPessoa.nivelPrioridade, this.nivelPrioridade);
         if (prioridadeComparison != 0) {
             return prioridadeComparison;
